@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #a0a3a5; }
+
+/**********************************************************/
+/* The free trial notification */
+#trialNotification {
+  padding: 5px;
+  overflow: auto;
+  color: #5380b2; }
+  #trialNotification h2 {
+    display: inline-block;
+    float: left; }
+  #trialNotification h1 {
+    display: inline-block;
+    float: right; }
+    #trialNotification h1:hover {
+      cursor: pointer;
+      color: red; }
+
+/*****************************************************************/
+/* The jumbotron contents */
+#tron {
+  background-image: url("../imgs/happyfamily.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  margin-bottom: 0; }
+  #tron #theTronHeader {
+    padding: 8px;
+    position: relative;
+    top: -50px; }
+    #tron #theTronHeader #title {
+      display: inline-block;
+      position: relative;
+      top: -10px;
+      text-align: center;
+      padding-left: 20px; }
+      #tron #theTronHeader #title img {
+        margin-top: 20px;
+        width: 100px; }
+    #tron #theTronHeader .navMenu {
+      display: inline-block;
+      float: right;
+      position: relative;
+      top: 20px; }
+      #tron #theTronHeader .navMenu h4 {
+        display: inline-block;
+        padding-right: 20px; }
+        #tron #theTronHeader .navMenu h4 a {
+          color: white;
+          text-decoration: none; }
+          #tron #theTronHeader .navMenu h4 a:hover {
+            color: #a0a3a5; }
+  #tron #info {
+    margin-top: 50px;
+    text-align: center; }
+    #tron #info h1 {
+      font-weight: 350;
+      font-size: 50px; }
+    #tron #info h2 {
+      font-weight: 100; }
+    #tron #info button {
+      border: none;
+      background: #ffb76b;
+      /* Old browsers */
+      background: -moz-linear-gradient(left, #ffb76b 0%, #ffa73d 30%, #ff7c00 63%, #ff7f04 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #ffb76b 0%, #ffa73d 30%, #ff7c00 63%, #ff7f04 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #ffb76b 0%, #ffa73d 30%, #ff7c00 63%, #ff7f04 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=1 );
+      /* IE6-9 */
+      padding: 10px 50px;
+      color: white;
+      font-family: Helvetica, sans-serif;
+      font-size: 25px;
+      border-radius: 10px; }
+      #tron #info button:hover {
+        cursor: pointer; }
+  #tron #planOptions {
+    margin-top: 30px;
+    margin-left: 50%;
+    margin-right: 50%; }
+    #tron #planOptions #arrowContainer {
+      border: 2px solid white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 30px; }
+      #tron #planOptions #arrowContainer:hover {
+        color: #bf4c16;
+        cursor: pointer; }
+
+@media only screen and (max-width: 900px) {
+  #trialNotification {
+    text-align: center;
+    width: 100%;
+    display: block; }
+
+  #title {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    display: block; }
+
+  .navMenu {
+    text-align: center;
+    width: 100%;
+    display: block; }
+
+  .navMenu div {
+    display: block;
+    margin: 0; }
+
+  #info {
+    text-align: center;
+    width: 100%;
+    display: block; } }
+/** End of media query for the header */
+/**************************************************************/
+#watchAnywhere {
+  background: #ffb76b;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #ffb76b 0%, #ffa73d 30%, #ff7c00 63%, #ff7f04 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ffb76b 0%, #ffa73d 30%, #ff7c00 63%, #ff7f04 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ffb76b 0%, #ffa73d 30%, #ff7c00 63%, #ff7f04 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=1 );
+  /* IE6-9 */ }
+  #watchAnywhere table {
+    width: 100%; }
+    #watchAnywhere table tr th {
+      padding: 50px;
+      font-size: 3rem;
+      color: white;
+      font-family: Helvetica, sans-serif;
+      text-align: center; }
+    #watchAnywhere table tr td {
+      text-align: center;
+      padding: 5px; }
+      #watchAnywhere table tr td p {
+        color: white;
+        font-size: 2rem;
+        font-family: sans-serif;
+        text-align: center; }
+      #watchAnywhere table tr td img {
+        width: 110px; }
+
+#watchOptions {
+  text-align: center;
+  background-color: #e9e9e9; }
+  #watchOptions img {
+    width: 85%; }
+
+/** Beginning of the select your plan area */
+#selectYourPlanArea {
+  background-color: #e9e9e9;
+  padding: 10px;
+  overflow: auto; }
+  #selectYourPlanArea #selectTitle {
+    text-align: center;
+    color: #5f6061; }
+    #selectYourPlanArea #selectTitle h1 {
+      font-weight: 200;
+      font-size: 4vw; }
+    #selectYourPlanArea #selectTitle p {
+      font-size: 2vw; }
+  #selectYourPlanArea #watchMonkeyPlanContainer {
+    margin: 0 auto; }
+    #selectYourPlanArea #watchMonkeyPlanContainer .box {
+      background-color: white;
+      border-radius: 5px;
+      padding: 30px;
+      width: 47%; }
+    #selectYourPlanArea #watchMonkeyPlanContainer #box1 {
+      float: left; }
+      #selectYourPlanArea #watchMonkeyPlanContainer #box1:hover {
+        cursor: pointer; }
+        #selectYourPlanArea #watchMonkeyPlanContainer #box1:hover #select1 {
+          background: #ff7c00;
+          /* Old browsers */
+          background: -moz-linear-gradient(-45deg, #ff7c00 31%, #ffa73d 56%, #ffb76b 83%, #ffb76b 94%);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(-45deg, #ff7c00 31%, #ffa73d 56%, #ffb76b 83%, #ffb76b 94%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(135deg, #ff7c00 31%, #ffa73d 56%, #ffb76b 83%, #ffb76b 94%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7c00', endColorstr='#ffb76b',GradientType=1 );
+          /* IE6-9 fallback on horizontal gradient */
+          color: white; }
+      #selectYourPlanArea #watchMonkeyPlanContainer #box1 .seeAddon {
+        text-align: center; }
+        #selectYourPlanArea #watchMonkeyPlanContainer #box1 .seeAddon p {
+          color: grey;
+          font-size: 1.3vw; }
+          #selectYourPlanArea #watchMonkeyPlanContainer #box1 .seeAddon p i {
+            position: relative;
+            top: 2px; }
+    #selectYourPlanArea #watchMonkeyPlanContainer #box2 {
+      float: right; }
+      #selectYourPlanArea #watchMonkeyPlanContainer #box2:hover {
+        cursor: pointer; }
+        #selectYourPlanArea #watchMonkeyPlanContainer #box2:hover #select2 {
+          background: #ff7c00;
+          /* Old browsers */
+          background: -moz-linear-gradient(-45deg, #ff7c00 31%, #ffa73d 56%, #ffb76b 83%, #ffb76b 94%);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(-45deg, #ff7c00 31%, #ffa73d 56%, #ffb76b 83%, #ffb76b 94%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(135deg, #ff7c00 31%, #ffa73d 56%, #ffb76b 83%, #ffb76b 94%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7c00', endColorstr='#ffb76b',GradientType=1 );
+          /* IE6-9 fallback on horizontal gradient */
+          color: white; }
+      #selectYourPlanArea #watchMonkeyPlanContainer #box2 .seeAddon {
+        text-align: center; }
+        #selectYourPlanArea #watchMonkeyPlanContainer #box2 .seeAddon p {
+          color: grey;
+          font-size: 1.3vw; }
+          #selectYourPlanArea #watchMonkeyPlanContainer #box2 .seeAddon p i {
+            position: relative;
+            top: 2px; }
+    #selectYourPlanArea #watchMonkeyPlanContainer .boxHeader {
+      text-align: center;
+      width: auto;
+      padding-bottom: 10px; }
+      #selectYourPlanArea #watchMonkeyPlanContainer .boxHeader h2 {
+        font-size: 1.5vw; }
+      #selectYourPlanArea #watchMonkeyPlanContainer .boxHeader p {
+        font-size: 2vw;
+        font-weight: 200; }
+      #selectYourPlanArea #watchMonkeyPlanContainer .boxHeader .price {
+        font-size: 4vw;
+        font-weight: 200; }
+        #selectYourPlanArea #watchMonkeyPlanContainer .boxHeader .price .month {
+          font-size: 2vw;
+          font-weight: 200; }
+      #selectYourPlanArea #watchMonkeyPlanContainer .boxHeader .selectPlanButton {
+        background: none;
+        color: #ffb76b;
+        border-color: #ffb76b;
+        border-width: 2px;
+        padding: 5px 30px 5px 30px;
+        font-size: 1.6vw;
+        font-weight: 200; }
+        #selectYourPlanArea #watchMonkeyPlanContainer .boxHeader .selectPlanButton:hover {
+          cursor: pointer;
+          box-shadow: 1px 1px 5px #686666; }
+    #selectYourPlanArea #watchMonkeyPlanContainer .boxBody p {
+      font-size: 1.3vw;
+      padding-bottom: 10px; }
+
+footer {
+  width: 100%;
+  padding: 10px;
+  background-color: #eca664;
+  color: white;
+  font-size: 1.3vw; }
+  footer ul li {
+    display: inline-block;
+    padding-right: 20px; }
+    footer ul li a {
+      color: white; }
+      footer ul li a:hover {
+        text-decoration: none; }
+  footer ul #copyright {
+    float: right; }
+
+/*# sourceMappingURL=style.css.map */
