@@ -31,8 +31,8 @@ function animateButtonOnOut() {
         paddingRight: "+=30"
     },200);
 }
-startTrialButton.addEventListener("mouseover", animateButtonOnOver);
-startTrialButton.addEventListener("mouseout", animateButtonOnOut);
+startTrialButton.addEventListener("mouseenter", animateButtonOnOver);
+startTrialButton.addEventListener("mouseleave", animateButtonOnOut);
 /** End of add functionality and animation to the start trial button */
 
 /************************************************************************** */
@@ -131,6 +131,8 @@ function moveDown2() {
 box[1].addEventListener("mouseenter", moveUp2);
 box[1].addEventListener("mouseleave", moveDown2);
 
+/***************************************************************** */
+
 /** Moves the select plan button inside of box1 and box2 up and down when
  * user mouseenters and leaves.
  */
@@ -162,3 +164,50 @@ function moveSelect2Left() {
 }
 selectButtons[1].addEventListener("mouseenter", moveSelect2Right);
 selectButtons[1].addEventListener("mouseleave", moveSelect2Left);
+
+/************************************************************************** */
+
+/** When user mouseclicks 'See add-ons' area, bring down card and reveal
+ * more info.
+ */
+
+ // Getting the see add-ons elements, and getting the add-on-content div.
+ var seeAddons = document.querySelectorAll(".seeAddon p");
+ var addOnDiv = document.querySelectorAll("#add-on-content");
+ addOnDiv[0].setAttribute('class', 'add-on-contentNONE');
+ addOnDiv[1].setAttribute('class', 'add-on-contentNONE');
+
+ // Getting the close add-ons element
+ var closeAddons = document.querySelectorAll("#add-on-content p");
+
+ /** The First Card ***********************************/
+ function extendCard1() {
+    addOnDiv[0].removeAttribute('class', 'add-on-contentNONE');
+    addOnDiv[0].setAttribute('class', 'add-on-contentBLOCK');
+    console.log("See add ons for card one was clicked!");
+ }
+ seeAddons[0].addEventListener("click", extendCard1);
+
+ function collapseCard1() {
+    addOnDiv[0].removeAttribute('class', 'add-on-contentBLOCK');
+    addOnDiv[0].setAttribute('class', 'add-on-contentNONE');
+    console.log("Close add ons for card one was clicked")
+ }
+ closeAddons[0].addEventListener("click", collapseCard1);
+
+ /** The Second Card *********************************/
+ function extendCard2() {
+
+   
+    addOnDiv[1].setAttribute('class', 'add-on-contentBLOCK');
+    console.log("See add ons for card two was clicked!");
+ }
+ seeAddons[1].addEventListener("click", extendCard2);
+
+ function collapseCard2() {
+
+  
+    addOnDiv[1].setAttribute('class', 'add-on-contentNONE');
+    console.log("Close add ons for card two was clicked")
+ }
+ closeAddons[1].addEventListener("click", collapseCard2);

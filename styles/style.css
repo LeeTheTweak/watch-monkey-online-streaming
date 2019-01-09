@@ -206,6 +206,26 @@ body {
           #selectYourPlanArea #watchMonkeyPlanContainer #box1 .seeAddon p i {
             position: relative;
             top: 2px; }
+      #selectYourPlanArea #watchMonkeyPlanContainer #box1 .add-on-contentNONE {
+        font-size: 1vw;
+        width: 100%;
+        display: none; }
+        #selectYourPlanArea #watchMonkeyPlanContainer #box1 .add-on-contentNONE ul li {
+          list-style-type: none;
+          padding-bottom: 10px; }
+        #selectYourPlanArea #watchMonkeyPlanContainer #box1 .add-on-contentNONE p {
+          color: grey;
+          font-size: 1.3vw; }
+      #selectYourPlanArea #watchMonkeyPlanContainer #box1 .add-on-contentBLOCK {
+        font-size: 1vw;
+        width: 100%;
+        display: block; }
+        #selectYourPlanArea #watchMonkeyPlanContainer #box1 .add-on-contentBLOCK ul li {
+          list-style-type: none;
+          padding-bottom: 10px; }
+        #selectYourPlanArea #watchMonkeyPlanContainer #box1 .add-on-contentBLOCK p {
+          color: grey;
+          font-size: 1.3vw; }
     #selectYourPlanArea #watchMonkeyPlanContainer #box2 {
       float: right; }
       #selectYourPlanArea #watchMonkeyPlanContainer #box2:hover {
@@ -230,6 +250,26 @@ body {
           #selectYourPlanArea #watchMonkeyPlanContainer #box2 .seeAddon p i {
             position: relative;
             top: 2px; }
+      #selectYourPlanArea #watchMonkeyPlanContainer #box2 .add-on-contentNONE {
+        font-size: 1vw;
+        width: 100%;
+        display: none; }
+        #selectYourPlanArea #watchMonkeyPlanContainer #box2 .add-on-contentNONE ul li {
+          list-style-type: none;
+          padding-bottom: 10px; }
+        #selectYourPlanArea #watchMonkeyPlanContainer #box2 .add-on-contentNONE p {
+          color: grey;
+          font-size: 1.3vw; }
+      #selectYourPlanArea #watchMonkeyPlanContainer #box2 .add-on-contentBLOCK {
+        font-size: 1vw;
+        width: 100%;
+        display: block; }
+        #selectYourPlanArea #watchMonkeyPlanContainer #box2 .add-on-contentBLOCK ul li {
+          list-style-type: none;
+          padding-bottom: 10px; }
+        #selectYourPlanArea #watchMonkeyPlanContainer #box2 .add-on-contentBLOCK p {
+          color: grey;
+          font-size: 1.3vw; }
     #selectYourPlanArea #watchMonkeyPlanContainer .boxHeader {
       text-align: center;
       width: auto;
