@@ -249,10 +249,11 @@ body {
         background: none;
         color: #ffb76b;
         border-color: #ffb76b;
-        border-width: 2px;
+        border-width: 4px;
+        border-style: solid;
         padding: 5px 30px 5px 30px;
         font-size: 1.6vw;
-        font-weight: 200; }
+        font-weight: 500; }
         #selectYourPlanArea #watchMonkeyPlanContainer .boxHeader .selectPlanButton:hover {
           cursor: pointer;
           box-shadow: 1px 1px 5px #686666; }

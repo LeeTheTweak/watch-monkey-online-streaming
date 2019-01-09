@@ -84,13 +84,81 @@ function growBackIcon3() {
     console.log("The on the go icon was mouse overed.");
 }
 // Mousover Listeners
-watchIcons[0].addEventListener("mouseover", shrinkIcon1);
-watchIcons[1].addEventListener("mouseover", shrinkIcon2);
-watchIcons[2].addEventListener("mouseover", shrinkIcon3);
+watchIcons[0].addEventListener("mouseenter", shrinkIcon1);
+watchIcons[1].addEventListener("mouseenter", shrinkIcon2);
+watchIcons[2].addEventListener("mouseenter", shrinkIcon3);
 
 // Mouseout Listeners
-watchIcons[0].addEventListener("mouseout", growBackIcon1);
-watchIcons[1].addEventListener("mouseout", growBackIcon2);
-watchIcons[2].addEventListener("mouseout", growBackIcon3);
+watchIcons[0].addEventListener("mouseleave", growBackIcon1);
+watchIcons[1].addEventListener("mouseleave", growBackIcon2);
+watchIcons[2].addEventListener("mouseleave", growBackIcon3);
 
 /**************************************************************** */
+
+/** Getting box 1 and box 2 containers. When user mouseenters
+ * each of these boxes, they move up slightly. When user mouseleaves,
+ * they move back down.
+*/
+var box = document.querySelectorAll(".box");
+
+function moveUp1() {
+    $(box).eq(0).animate({
+        marginTop: "-10px",
+    }, 200);
+    box[0].style.boxShadow = "2px 20px 50px black";
+}
+function moveDown1() {
+    $(box).eq(0).animate({
+        marginTop: "0px"
+    }, 200);
+    box[0].style.boxShadow = "none";
+}
+box[0].addEventListener("mouseenter", moveUp1);
+box[0].addEventListener("mouseleave", moveDown1)
+
+function moveUp2() {
+    $(box).eq(1).animate({
+        marginTop: "-10px"
+    }, 200);
+    box[1].style.boxShadow = "2px 20px 50px black";
+}
+function moveDown2() {
+    $(box).eq(1).animate({
+        marginTop: "0px"
+    }, 200);
+    box[1].style.boxShadow = "none";
+}
+box[1].addEventListener("mouseenter", moveUp2);
+box[1].addEventListener("mouseleave", moveDown2);
+
+/** Moves the select plan button inside of box1 and box2 up and down when
+ * user mouseenters and leaves.
+ */
+
+ // Getting the select buttons
+var selectButtons = document.querySelectorAll(".selectPlanButton");
+function moveSelect1Left() {
+    $(selectButtons).eq(0).animate({
+        marginLeft: "-15px"
+    }, 200);
+}
+function moveSelect1Right() {
+    $(selectButtons).eq(0).animate({
+        marginLeft: "12px"
+    }, 200);
+}
+selectButtons[0].addEventListener("mouseenter", moveSelect1Left);
+selectButtons[0].addEventListener("mouseleave", moveSelect1Right);
+
+function moveSelect2Right() {
+    $(selectButtons).eq(1).animate({
+        marginRight: "-15px"
+    }, 200);
+}
+function moveSelect2Left() {
+    $(selectButtons).eq(1).animate({
+        marginRight: "12px"
+    }, 200);
+}
+selectButtons[1].addEventListener("mouseenter", moveSelect2Right);
+selectButtons[1].addEventListener("mouseleave", moveSelect2Left);
