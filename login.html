@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Watch Monkey - Watch and Stream Live TV</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link href="styles/login.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <div id="nav">
+                <ul>
+                    <a href="index.html"><img src="imgs/watchMonkeyLogo.png"></a>
+                    <li><a href="#"><p>Sign Up</p></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="formContainer">
+            <form action="http://www.example.com/subscribe.php" method="get">
+                <div id="formTitle">
+                    <h2>Log in to Watch Monkey</h2>
+                </div>
+            <a href="#">
+                <div id="facebookLogButton">
+                    <p>LOG IN WITH FACEBOOK</p>
+                </div>
+            </a>
+                <p id="or">or</p>
+                <div id="actualInputs">
+                    <p>EMAIL</p>
+                    <input type="email" name="email" required>
+                    <p>PASSWORD</p>
+                    <input type="password" name="password" required>
+                    <br>
+                    <a href="#">Forgot your email or password?</a>
+                    <br>
+                    <div id="logInButton">
+                        <button type="submit" name="submit">LOG IN</button>
+                    </div>
+                </div>
+                <hr>
+                <div id="needAccount">
+                    <p>Don't have an account? <a href="#">Start your free trial</a></p>
+                </div>
+            </form>
+        </section>
+
+        <script href="scripts/jquery-3.3.1.js"></script>
+        <script href="scripts/bootstrap.min.js"></script>
+        <script href="scripts/login.js"></script>
+    </body>
+
+</html>

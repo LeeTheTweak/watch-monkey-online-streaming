@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #a0a3a5;
+  background-image: url("../imgs/happyfamily.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Helvetica, sans-serif; }
+
+header {
+  background-color: #ddb68d;
+  padding: 1px;
+  padding-left: 5px;
+  padding-right: 5px; }
+  header #nav {
+    position: relative;
+    top: 10px; }
+    header #nav ul img {
+      width: 100px; }
+    header #nav ul li {
+      list-style-type: none;
+      display: inline-block;
+      padding-right: 20px;
+      float: right;
+      font-size: 20px; }
+      header #nav ul li a {
+        text-decoration: none; }
+      header #nav ul li p {
+        position: relative;
+        top: 0px;
+        color: white; }
+
+#formContainer {
+  background-color: #ebebeb;
+  width: 330px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 3%;
+  border-radius: 6px; }
+  #formContainer form a {
+    text-decoration: none;
+    color: #d19d58; }
+  #formContainer form #formTitle h2 {
+    font-weight: 100; }
+  #formContainer form a {
+    text-decoration: none; }
+  #formContainer form #facebookLogButton {
+    background-color: #d19d58;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 3px; }
+  #formContainer form #or {
+    text-align: center; }
+  #formContainer form #actualInputs p {
+    margin-bottom: -2px; }
+  #formContainer form #actualInputs input {
+    width: 300px;
+    height: 40px;
+    font-family: Helvetica, sans-serif;
+    font-size: 25px; }
+  #formContainer form #actualInputs #logInButton {
+    text-align: center;
+    margin-top: 5px; }
+    #formContainer form #actualInputs #logInButton button {
+      padding: 10px;
+      background-color: #d19d58;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      width: 100px; }
+  #formContainer form #needAccount {
+    font-size: 15px; }
+
+/*# sourceMappingURL=login.css.map */
