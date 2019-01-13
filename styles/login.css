@@ -75,6 +75,8 @@ header {
       border: none;
       border-radius: 3px;
       width: 100px; }
+      #formContainer form #actualInputs #logInButton button:hover {
+        cursor: pointer; }
   #formContainer form #needAccount {
     font-size: 15px; }
 
