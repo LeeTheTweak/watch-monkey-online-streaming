@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Watch Monkey - Watch and Stream Live TV</title>
+        <link rel="favicon" href="imgs/watchMonkeyLogo.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link href="styles/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="styles/create.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <div>
+                <ul>
+                    <li><a href="index.html"><img src="imgs/watchMonkeyLogo.png"></a></li>
+                    <li id="loginArea"><a href="login.html">Log In</a></li>
+                </ul>
+            </div>
+        </header>
+
+
+        <section>
+            <h1>Create Your Account</h1>
+            <div id="formContainer">
+                <form action="http://www.example.com/subscribe.php" method="get" id="form">
+                    <a href="#">
+                        <div id="facebookLogButton">
+                            <p>Continue with Facebook</p>
+                        </div>
+                    </a>
+                    <p>We'll never post without your permission.</p>
+                        <p id="or">or</p>
+                        <div id="actualInputs">
+                            <p>EMAIL</p>
+                            <input type="email" name="email" required>
+                            <p>PASSWORD</p>
+                            <input type="password" name="password" required><br>
+                            <a href="#">Forgot your email or password?</a>
+                            <p>NAME</p>
+                            <input type="text" name="name" required>
+                            <p>BIRTHDATE</p>
+                            <input type="date" name="birthdate" required><br><br> 
+                            <p>GENDER</p>
+                            <select name="gender">
+                                <option value=" "></option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <div id="logInButton">
+                                <button type="submit" name="submit">Sign Up</button>
+                            </div>
+                        </div>
+                        <div id="formFooter">
+                           
+                        </div>
+                </form>
+            </div>
+        </section>
+
+
+        <footer>
+
+        </footer>
+
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/jquery-3.3.1.js"></script>
+    </body>
+</html>

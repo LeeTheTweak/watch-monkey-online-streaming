@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #f0f0f0; }
+
+header {
+  padding: 5px;
+  background: #fac695;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #fac695 43%, #ef8d31 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #fac695 43%, #ef8d31 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #fac695 43%, #ef8d31 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fac695', endColorstr='#ef8d31',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */ }
+  header ul li {
+    display: inline-block;
+    position: relative;
+    left: -15px; }
+    header ul li:nth-child(2) {
+      float: right;
+      position: relative;
+      top: 30px; }
+    header ul li img {
+      width: 100px;
+      position: relative;
+      top: 10px; }
+    header ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px; }
+      header ul li a:hover {
+        text-decoration: none;
+        color: white; }
+
+section {
+  width: 100%;
+  padding: 10px; }
+  section h1 {
+    text-align: center;
+    font-weight: 300; }
+  section #formContainer {
+    margin: auto;
+    width: 330px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px grey; }
+    section #formContainer a:hover {
+      text-decoration: none; }
+    section #formContainer #facebookLogButton {
+      background-color: #d19d58;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      padding: 4px;
+      border-radius: 3px;
+      border: none; }
+      section #formContainer #facebookLogButton p {
+        position: relative;
+        top: 10px; }
+    section #formContainer #or {
+      text-align: center; }
+    section #formContainer #actualInputs p {
+      margin: 0;
+      padding: 0; }
+    section #formContainer #actualInputs input {
+      width: 100%; }
+    section #formContainer #actualInputs select {
+      width: 100%; }
+    section #formContainer #actualInputs #logInButton {
+      text-align: center;
+      margin-top: 5px; }
+      section #formContainer #actualInputs #logInButton button {
+        background-color: #d19d58;
+        border-radius: 3px;
+        color: white;
+        border: none; }
+
+/*# sourceMappingURL=create.css.map */
